@@ -80,11 +80,21 @@
         android:layout_height="wrap_content"
         android:text="개인정보 제공에 동의합니다." />
 
-    <ImageView
-        android:layout_width="250dp"
-        android:layout_height="150dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/nepplus_logo"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nepplus_logo"/>
+
+
+    </LinearLayout>
+
 
     <Button
         android:layout_width="match_parent"
