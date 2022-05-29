@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="38dp"
+        android:padding="16dp"
+        tools:context=".ui.activity.BuyActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/plus_ten"
+                    android:layout_width="0dp"
+                    android:layout_height="41dp"
+                    android:background="@drawable/buy_type_01"
+                    android:gravity="center"
+                    android:lineSpacingExtra="2sp"
+                    android:text="@string/plus_ten"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toTopOf="@id/plus_5hundred"
+                    app:layout_constraintEnd_toStartOf="@id/plus_fifty"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/plus_fifty"
+                    android:layout_width="0dp"
+                    android:layout_height="41dp"
+                    android:layout_marginHorizontal="14dp"
+                    android:background="@drawable/buy_type_01"
+                    android:gravity="center"
+                    android:lineSpacingExtra="2sp"
+                    android:text="@string/plus_fifty"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toTopOf="@id/plus_thousand"
+                    app:layout_constraintEnd_toStartOf="@id/plus_1hundred"
+                    app:layout_constraintStart_toEndOf="@id/plus_ten"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/plus_1hundred"
+                    android:layout_width="0dp"
+                    android:layout_height="41dp"
+                    android:background="@drawable/buy_type_01"
+                    android:gravity="center"
+                    android:lineSpacingExtra="2sp"
+                    android:text="@string/plus_1hundred"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/plus_fifty"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/plus_5hundred"
+                    android:layout_width="0dp"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/buy_type_01"
+                    android:gravity="center"
+                    android:lineSpacingExtra="2sp"
+                    android:text="@string/plus_5hundred"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@id/plus_ten"
+                    app:layout_constraintStart_toStartOf="@id/plus_ten"
+                    app:layout_constraintTop_toBottomOf="@id/plus_ten" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/plus_thousand"
+                    android:layout_width="0dp"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/buy_type_01"
+                    android:gravity="center"
+                    android:lineSpacingExtra="2sp"
+                    android:text="@string/plus_thousand"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@id/plus_fifty"
+                    app:layout_constraintStart_toStartOf="@id/plus_fifty"
+                    app:layout_constraintTop_toBottomOf="@id/plus_fifty" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_reset"
+                    android:layout_width="0dp"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/buy_type_01"
+                    android:gravity="center"
+                    android:lineSpacingExtra="2sp"
+                    android:text="@string/reset"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@id/plus_1hundred"
+                    app:layout_constraintStart_toStartOf="@id/plus_1hundred"
+                    app:layout_constraintTop_toBottomOf="@id/plus_1hundred" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_pay"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/buy_type_02"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="1sp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingStart="16dp"
+                    android:text="pay"
+                    android:textColor="#222222"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/plus_5hundred" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:lineSpacingExtra="1sp"
+                    android:paddingVertical="12dp"
+                    android:paddingEnd="16dp"
+                    android:text="$ 0.00"
+                    android:textColor="#cccccc"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_pay"
+                    app:layout_constraintEnd_toEndOf="@id/txt_pay"
+                    app:layout_constraintTop_toTopOf="@id/txt_pay" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:lineSpacingExtra="2sp"
+                    android:text="@string/amount"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_pay" />
+
+                <View
+                    android:id="@+id/txt_underline"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#666666"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_amount" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_fee_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:lineSpacingExtra="-2sp"
+                    android:text="Fee"
+                    android:textColor="#222222"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_underline" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_fee_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:lineSpacingExtra="-2sp"
+                    android:text="$ 0.00"
+                    android:textColor="#222222"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/txt_fee_01" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_price_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="-2sp"
+                    android:text="@string/price"
+                    android:textColor="#222222"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_fee_01" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_price_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:lineSpacingExtra="-2sp"
+                    android:text="USD 1.23"
+                    android:textColor="#222222"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/txt_price_01" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_time_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="-2sp"
+                    android:text="@string/time"
+                    android:textColor="#222222"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_price_01" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_time_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:lineSpacingExtra="-2sp"
+                    android:text="300 Sec"
+                    android:textColor="#9a74f1"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/txt_time_01" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_receive"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/buy_type_01"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="19sp"
+                    android:paddingVertical="19dp"
+                    android:paddingStart="20dp"
+                    android:text="@string/receive"
+                    android:textColor="#222222"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_time_01" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:lineSpacingExtra="17sp"
+                    android:paddingVertical="19dp"
+                    android:paddingEnd="20dp"
+                    android:text="0"
+                    android:textColor="#444444"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_receive"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txt_receive" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_continue"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="35dp"
+            android:src="@drawable/continue_button"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

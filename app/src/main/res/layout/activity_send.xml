@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="38dp"
+        tools:context=".ui.activity.SendActivity">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:lineSpacingExtra="21sp"
+            android:text="To"
+            android:textColor="#222222"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="17dp"
+            android:gravity="end"
+            android:lineSpacingExtra="19sp"
+            android:text="홍길동"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txt_to" />
+
+        <View
+            android:id="@+id/view_01"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="11dp"
+            android:background="#eeeeee"
+            app:layout_constraintEnd_toEndOf="@id/txt_name"
+            app:layout_constraintStart_toStartOf="@id/txt_to"
+            app:layout_constraintTop_toBottomOf="@id/txt_to" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:lineSpacingExtra="21sp"
+            android:text="Contact No"
+            android:textColor="#222222"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/txt_to"
+            app:layout_constraintTop_toBottomOf="@id/view_01" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:lineSpacingExtra="21sp"
+            android:text="010-000-****"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@id/txt_name"
+            app:layout_constraintTop_toTopOf="@id/txt_contact" />
+
+        <View
+            android:id="@+id/view_02"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="11dp"
+            android:background="#eeeeee"
+            app:layout_constraintEnd_toEndOf="@id/txt_name"
+            app:layout_constraintStart_toStartOf="@id/txt_to"
+            app:layout_constraintTop_toBottomOf="@id/txt_contact" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:lineSpacingExtra="21sp"
+            android:text="Wallet Address"
+            android:textColor="#222222"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/txt_to"
+            app:layout_constraintTop_toBottomOf="@id/view_02" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:lineSpacingExtra="21sp"
+            android:text="krwmu14e3pdrhtdv6nc……."
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@id/txt_name"
+            app:layout_constraintTop_toTopOf="@id/txt_wallet" />
+
+        <View
+            android:id="@+id/view_03"
+            android:layout_width="0dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="26dp"
+            android:background="#f7f6fb"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_wallet" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_monthly_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:lineSpacingExtra="0sp"
+            android:text="Monthly limit"
+            android:textColor="#222222"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/txt_to"
+            app:layout_constraintTop_toTopOf="@id/view_03" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_guru_limit_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:lineSpacingExtra="0sp"
+            android:text="5,000,000 / 5,000,000 GURU"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@id/txt_name"
+            app:layout_constraintTop_toTopOf="@id/txt_monthly_limit" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_daily_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:lineSpacingExtra="0sp"
+            android:text="Daily limit"
+            android:textColor="#222222"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/txt_to"
+            app:layout_constraintTop_toBottomOf="@id/txt_monthly_limit" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_guru_limit_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:lineSpacingExtra="0sp"
+            android:text="2,500,000 / 2,500,000 GURU"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@id/txt_name"
+            app:layout_constraintTop_toTopOf="@id/txt_daily_limit" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:lineSpacingExtra="0sp"
+            android:text="Type"
+            android:textColor="#222222"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/txt_to"
+            app:layout_constraintTop_toBottomOf="@id/txt_daily_limit" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_guru_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:lineSpacingExtra="0sp"
+            android:text="Send"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@id/txt_name"
+            app:layout_constraintTop_toTopOf="@id/txt_type" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_total_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:lineSpacingExtra="0sp"
+            android:text="Total quantity"
+            android:textColor="#222222"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/txt_to"
+            app:layout_constraintTop_toBottomOf="@id/txt_type" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_guru_quantity_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:lineSpacingExtra="0sp"
+            android:text="1,000.236541 GURU"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@id/txt_name"
+            app:layout_constraintTop_toTopOf="@id/txt_total_quantity" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_available_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:lineSpacingExtra="0sp"
+            android:text="Available quantity"
+            android:textColor="#9a74f1"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/txt_to"
+            app:layout_constraintTop_toBottomOf="@id/txt_total_quantity" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_guru_quantity_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:lineSpacingExtra="0sp"
+            android:text="999.236541 GURU"
+            android:textColor="#9a74f1"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@id/txt_name"
+            app:layout_constraintTop_toTopOf="@id/txt_available_quantity" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_tx_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:lineSpacingExtra="0sp"
+            android:text="Tx Fee"
+            android:textColor="#222222"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/txt_to"
+            app:layout_constraintTop_toBottomOf="@+id/txt_available_quantity" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_guru_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:lineSpacingExtra="0sp"
+            android:text="1GURU"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@id/txt_name"
+            app:layout_constraintTop_toTopOf="@id/txt_tx_fee" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_input_guru"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginHorizontal="17dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/send_type_01"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="1sp"
+            android:paddingStart="16dp"
+            android:text="GURU"
+            android:textColor="#222222"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/txt_to"
+            app:layout_constraintTop_toBottomOf="@id/view_03" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_guru_quantity_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="1sp"
+            android:paddingEnd="16dp"
+            android:text="0"
+            android:textColor="#cccccc"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@id/txt_input_guru"
+            app:layout_constraintEnd_toEndOf="@id/txt_name"
+            app:layout_constraintTop_toTopOf="@id/txt_input_guru" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_send_guru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:lineSpacingExtra="2sp"
+            android:text="Enter the quantity of GURUs to send."
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/txt_to"
+            app:layout_constraintTop_toBottomOf="@id/txt_input_guru" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_memo"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginHorizontal="17dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/send_type_01"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="1sp"
+            android:paddingStart="16dp"
+            android:text="MEMO"
+            android:textColor="#cccccc"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/txt_to"
+            app:layout_constraintTop_toBottomOf="@id/txt_send_guru" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_continue"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="35dp"
+            android:src="@drawable/continue_button"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
