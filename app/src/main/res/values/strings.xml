@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">UIPractice_20211101</string>
+    <string name="buy_guru">Buy GURU</string>
+    <string name="send_guru">Send GURU</string>
+    <string name="plus_ten">+ $ 10</string>
+    <string name="plus_fifty">+ $ 50</string>
+    <string name="plus_1hundred">+ $ 100</string>
+    <string name="plus_5hundred">+ $ 500</string>
+    <string name="plus_thousand">+ $ 1,000</string>
+    <string name="reset">Reset</string>
+    <string name="amount">Minimum amount $30</string>
+    <string name="price">Market price of 1 GURU</string>
+    <string name="time">Average Processing Time</string>
+    <string name="receive">Receive GURU</string>
+    <string name="mnemonic">Mnemonic</string>
 </resources>

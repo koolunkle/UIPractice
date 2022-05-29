@@ -13,4 +13,27 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="mnemonic_type">
+        <item name="android:background">@drawable/mnemonic_type_01</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">13sp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:text">noble</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="button_type">
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:background">@drawable/button_type</item>
+        <item name="android:gravity">center</item>
+        <item name="android:enabled">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:text">Continue</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
 </resources>
