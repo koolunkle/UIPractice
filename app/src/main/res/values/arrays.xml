@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mnemonic_array">
+        <item>"noble"</item>
+        <item>"genuine"</item>
+        <item>"cloth"</item>
+        <item>"mammal"</item>
+        <item>"total"</item>
+        <item>"mobile"</item>
+        <item>"fever"</item>
+        <item>"movie"</item>
+        <item>"job"</item>
+        <item>"sick"</item>
+        <item>"regular"</item>
+        <item>"nation"</item>
+        <item>"trade"</item>
+        <item>"manual"</item>
+        <item>"seek"</item>
+        <item>"snow"</item>
+        <item>"force"</item>
+        <item>"minimum"</item>
+        <item>"gospel"</item>
+        <item>"whisper"</item>
+        <item>"chef"</item>
+        <item>"shield"</item>
+        <item>"meat"</item>
+        <item>"rabbit"</item>
+    </string-array>
+</resources>
