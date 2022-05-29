@@ -1,4 +1,4 @@
-package com.neppplus.UIpractice_20211101
+package com.neppplus.ui_practice_20211101
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

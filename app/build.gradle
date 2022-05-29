@@ -4,12 +4,16 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk 31
+
+    buildFeatures {
+        dataBinding = true
+    }
 
     defaultConfig {
-        applicationId "com.neppplus.UIpractice_20211101"
+        applicationId "com.neppplus.ui_practice_20211101"
         minSdk 21
-        targetSdk 30
+        targetSdk 31
         versionCode 1
         versionName "1.0"
 

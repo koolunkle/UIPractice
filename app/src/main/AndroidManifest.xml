@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.neppplus.UIpractice_20211101">
+    package="com.neppplus.ui_practice_20211101">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UIPractice_20211101">
         <activity
-            android:name=".MainActivity"
+            android:name="com.neppplus.ui_practice_20211101.ui.activity.BuyActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,6 +18,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.neppplus.ui_practice_20211101.ui.activity.SendActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.neppplus.ui_practice_20211101.ui.activity.MnemonicActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.neppplus.ui_practice_20211101.ui.activity.MainActivity"
+            android:exported="true"></activity>
     </application>
 
 </manifest>
