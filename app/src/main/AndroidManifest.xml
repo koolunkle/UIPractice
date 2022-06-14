@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
   package="com.neppplus.ui_practice_20211101">
 
+  <uses-permission android:name="android.permission.INTERNET" />
+
   <application
     android:name=".di.Application"
     android:allowBackup="true"
@@ -11,13 +13,13 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.UIPractice_20211101">
     <activity
+      android:name=".ui.activity.room.RoomActivity"
+      android:exported="true" />
+    <activity
       android:name=".ui.activity.retrofit.RetrofitActivity"
       android:exported="true" />
     <activity
       android:name=".ui.activity.init.InitActivity"
-      android:exported="true" />
-    <activity
-      android:name=".ui.activity.buy.BuyActivity"
       android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -25,6 +27,9 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity
+      android:name=".ui.activity.buy.BuyActivity"
+      android:exported="true"></activity>
     <activity
       android:name=".ui.activity.send.SendActivity"
       android:exported="true" />
