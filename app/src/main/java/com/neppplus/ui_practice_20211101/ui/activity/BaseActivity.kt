@@ -4,48 +4,26 @@ import android.content.Context
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import androidx.databinding.DataBindingUtil
-import androidx.databinding.ViewDataBinding
-import com.neppplus.ui_practice_20211101.BR
 import com.neppplus.ui_practice_20211101.R
 
-abstract class BaseActivity<T : ViewDataBinding, U : BaseViewModel>(@LayoutRes private val layoutRes: Int) : AppCompatActivity(layoutRes) {
-
-  lateinit var binding: T
-  abstract val getViewModel: U
-
-  /**
-   * ActionBar Contents
-   */
+abstract class BaseActivity : AppCompatActivity() {
   lateinit var mContext: Context
   lateinit var imgBack: ImageView
   lateinit var txtTitle: TextView
   lateinit var imgHome: ImageView
 
-  abstract fun initView()
-  open fun observe() = Unit
-
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    binding = DataBindingUtil.setContentView(this, layoutRes)
-    binding.apply {
-      lifecycleOwner = this@BaseActivity
-      setVariable(BR.viewModel, getViewModel)
-      executePendingBindings()
-    }
+    mContext = this
     supportActionBar?.let {
       setCustomActionBar()
     }
-    initView()
-    observe()
   }
 
-  inline fun binding(block: T.() -> Unit) {
-    binding.apply(block)
-  }
+  abstract fun setupEvents()
+  abstract fun setValues()
 
   private fun setCustomActionBar() {
     val defActionBar = supportActionBar!!

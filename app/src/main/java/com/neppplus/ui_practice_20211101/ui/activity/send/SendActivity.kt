@@ -8,7 +8,7 @@ import com.neppplus.ui_practice_20211101.databinding.ActivitySendBinding
 import com.neppplus.ui_practice_20211101.ui.activity.BaseActivity
 import com.neppplus.ui_practice_20211101.ui.activity.mnemonic.MnemonicActivity
 
-class SendActivity : com.neppplus.ui_practice_20211101.BaseActivity() {
+class SendActivity : BaseActivity() {
 
     private lateinit var binding: ActivitySendBinding
 

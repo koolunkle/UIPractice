@@ -6,7 +6,7 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.neppplus.ui_practice_20211101.R
 import com.neppplus.ui_practice_20211101.databinding.ActivityRetrofitBinding
-import com.neppplus.ui_practice_20211101.ui.activity.BaseActivity
+import com.neppplus.ui_practice_20211101.BaseActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

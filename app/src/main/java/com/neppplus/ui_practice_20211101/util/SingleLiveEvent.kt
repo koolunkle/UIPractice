@@ -1,4 +1,4 @@
-package com.neppplus.ui_practice_20211101
+package com.neppplus.ui_practice_20211101.util
 
 import android.util.Log
 import androidx.annotation.MainThread

@@ -7,7 +7,7 @@ import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import com.neppplus.ui_practice_20211101.db.AppRepository
 import com.neppplus.ui_practice_20211101.db.entity.AppEntity
-import com.neppplus.ui_practice_20211101.ui.activity.BaseViewModel
+import com.neppplus.ui_practice_20211101.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject

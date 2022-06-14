@@ -9,7 +9,7 @@ import javax.inject.Inject
 class RetrofitRepository @Inject constructor(private val retrofitServiceInstance: RetrofitServiceInstance) {
   fun callApi(livedataList: MutableLiveData<List<RetrofitData>>) {
     val call: Call<List<RetrofitData>> = retrofitServiceInstance.getRequestUsers()
-    call?.enqueue(object : Callback<List<RetrofitData>> {
+    call.enqueue(object : Callback<List<RetrofitData>> {
       override fun onResponse(call: Call<List<RetrofitData>>, response: Response<List<RetrofitData>>) {
         livedataList.postValue(response.body())
       }

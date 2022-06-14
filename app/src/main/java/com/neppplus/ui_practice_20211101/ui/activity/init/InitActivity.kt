@@ -5,7 +5,7 @@ import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import com.neppplus.ui_practice_20211101.R
 import com.neppplus.ui_practice_20211101.databinding.ActivityInitBinding
-import com.neppplus.ui_practice_20211101.ui.activity.BaseActivity
+import com.neppplus.ui_practice_20211101.BaseActivity
 import com.neppplus.ui_practice_20211101.ui.activity.retrofit.RetrofitActivity
 import com.neppplus.ui_practice_20211101.ui.activity.room.RoomActivity
 

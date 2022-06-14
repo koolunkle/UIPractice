@@ -1,8 +1,8 @@
 package com.neppplus.ui_practice_20211101.ui.activity.init
 
 import androidx.lifecycle.LiveData
-import com.neppplus.ui_practice_20211101.SingleLiveEvent
-import com.neppplus.ui_practice_20211101.ui.activity.BaseViewModel
+import com.neppplus.ui_practice_20211101.util.SingleLiveEvent
+import com.neppplus.ui_practice_20211101.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

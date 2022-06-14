@@ -1,4 +1,4 @@
-package com.neppplus.ui_practice_20211101.ui.activity
+package com.neppplus.ui_practice_20211101
 
 import androidx.lifecycle.ViewModel
 

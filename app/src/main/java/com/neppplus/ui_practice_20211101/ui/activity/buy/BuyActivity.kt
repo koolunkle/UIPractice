@@ -5,9 +5,10 @@ import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.neppplus.ui_practice_20211101.R
 import com.neppplus.ui_practice_20211101.databinding.ActivityBuyBinding
+import com.neppplus.ui_practice_20211101.ui.activity.BaseActivity
 import com.neppplus.ui_practice_20211101.ui.activity.send.SendActivity
 
-class BuyActivity : com.neppplus.ui_practice_20211101.BaseActivity() {
+class BuyActivity : BaseActivity() {
 
   private lateinit var binding: ActivityBuyBinding
 
