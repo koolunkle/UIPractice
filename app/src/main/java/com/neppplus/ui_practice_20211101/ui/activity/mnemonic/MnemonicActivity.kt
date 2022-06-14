@@ -12,7 +12,7 @@ import com.neppplus.ui_practice_20211101.ui.activity.BaseActivity
 import com.neppplus.ui_practice_20211101.ui.activity.main.MainActivity
 import com.neppplus.ui_practice_20211101.ui.adapter.MnemonicAdapter
 
-class MnemonicActivity : BaseActivity() {
+class MnemonicActivity : com.neppplus.ui_practice_20211101.BaseActivity() {
 
     lateinit var binding: ActivityMnemonicBinding
 
