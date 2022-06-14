@@ -1,6 +1,6 @@
 package com.neppplus.ui_practice_20211101.db
 
-import android.content.Context
+import android.app.Application
 import com.neppplus.ui_practice_20211101.db.dao.AppDao
 import dagger.Module
 import dagger.Provides
@@ -13,7 +13,7 @@ import javax.inject.Singleton
 class AppModule {
   @Singleton
   @Provides
-  fun getAppDatabase(context: Context): AppDatabase {
+  fun getAppDatabase(context: Application): AppDatabase {
     return AppDatabase.getDbInstance(context)
   }
 
