@@ -8,7 +8,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="38dp"
         android:padding="16dp"
-        tools:context=".ui.activity.BuyActivity">
+        tools:context=".ui.activity.buy.BuyActivity">
 
         <ScrollView
             android:layout_width="match_parent"

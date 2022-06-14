@@ -11,7 +11,13 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.UIPractice_20211101">
     <activity
-      android:name="com.neppplus.ui_practice_20211101.ui.activity.BuyActivity"
+      android:name=".ui.activity.retrofit.RetrofitActivity"
+      android:exported="true" />
+    <activity
+      android:name=".ui.activity.init.InitActivity"
+      android:exported="true" />
+    <activity
+      android:name=".ui.activity.buy.BuyActivity"
       android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -20,14 +26,14 @@
       </intent-filter>
     </activity>
     <activity
-      android:name="com.neppplus.ui_practice_20211101.ui.activity.SendActivity"
+      android:name=".ui.activity.send.SendActivity"
       android:exported="true" />
     <activity
-      android:name="com.neppplus.ui_practice_20211101.ui.activity.MnemonicActivity"
+      android:name=".ui.activity.mnemonic.MnemonicActivity"
       android:exported="true" />
     <activity
-      android:name="com.neppplus.ui_practice_20211101.ui.activity.MainActivity"
-      android:exported="true"></activity>
+      android:name=".ui.activity.main.MainActivity"
+      android:exported="true" />
   </application>
 
 </manifest>

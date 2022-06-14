@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="38dp"
-        tools:context=".ui.activity.SendActivity">
+        tools:context=".ui.activity.send.SendActivity">
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/txt_to"

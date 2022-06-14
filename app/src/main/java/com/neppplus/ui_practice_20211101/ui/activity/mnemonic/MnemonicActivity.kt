@@ -1,4 +1,4 @@
-package com.neppplus.ui_practice_20211101.ui.activity
+package com.neppplus.ui_practice_20211101.ui.activity.mnemonic
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.SimpleItemAnimator
 import com.neppplus.ui_practice_20211101.model.MnemonicData
 import com.neppplus.ui_practice_20211101.R
 import com.neppplus.ui_practice_20211101.databinding.ActivityMnemonicBinding
+import com.neppplus.ui_practice_20211101.ui.activity.BaseActivity
+import com.neppplus.ui_practice_20211101.ui.activity.main.MainActivity
 import com.neppplus.ui_practice_20211101.ui.adapter.MnemonicAdapter
 
 class MnemonicActivity : BaseActivity() {

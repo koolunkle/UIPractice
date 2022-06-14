@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+  <data>
+
+    <variable
+      name="view"
+      type="com.neppplus.ui_practice_20211101.ui.activity.init.InitActivity" />
+
+    <variable
+      name="viewModel"
+      type="com.neppplus.ui_practice_20211101.ui.activity.init.InitViewModel" />
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.init.InitActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/btnRetrofit"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="30dp"
+      android:background="@color/black"
+      android:onClick="@{()-> viewModel.moveRetrofit()}"
+      android:text="Retrofit"
+      android:textAllCaps="false"
+      android:textColor="@color/white"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+    <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/btnRoom"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="30dp"
+      android:layout_marginTop="5dp"
+      android:background="@color/black"
+      android:onClick="@{()-> viewModel.moveRoom()}"
+      android:text="Room"
+      android:textAllCaps="false"
+      android:textColor="@color/white"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/btnRetrofit" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
